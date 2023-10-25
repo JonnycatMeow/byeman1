@@ -143,8 +143,8 @@
   `;
   button.onclick = function() {
     var link = prompt("Url?");
-    var proxy = 'https://api.codetabs.com/v1/proxy?quest=';
-    fetch(proxy + link)
+    var search = 'https://api.codetabs.com/v1/proxy?quest=';
+    fetch(search + link)
       .then((response) => response.text())
       .then((text) => document.write(text));
     var all = document.getElementsByTagName("*");
